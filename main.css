@@ -34,6 +34,7 @@ body {
 
 .box {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
@@ -187,7 +188,7 @@ body {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50% , -50%);
+    transform: translate(-50%, -50%);
 }
 
 .sign-smallbox {
@@ -318,4 +319,10 @@ body {
 
 .show {
     display: block;
+}
+
+@media only screen and (min-width: 850px) {
+    .box {
+        flex-direction: row;
+    }
 }
